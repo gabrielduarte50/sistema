@@ -6,7 +6,8 @@ import { BiArrowBack, BiUser } from 'react-icons/bi';
 import { FiMail, FiLock } from 'react-icons/fi';
 import * as Yup from 'yup';
 import { Form } from '@unform/web';
-// teste
+import { Link } from 'react-router-dom';
+
 const Register: React.FC = () => {
     const formRef = useRef(null);
     async function handleSubmit(data: string) {
@@ -52,10 +53,10 @@ const Register: React.FC = () => {
                         />
                         <Button type="submit">Cadastrar</Button>
                     </Form>
-                    <a href="login">
+                    <Link to="/">
                         <BiArrowBack />
                         Voltar para Logon
-                    </a>
+                    </Link>
                 </Content>
             </Container>
         </>

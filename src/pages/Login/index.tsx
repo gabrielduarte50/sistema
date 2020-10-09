@@ -5,6 +5,7 @@ import Input from '../../components/Input';
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import * as Yup from 'yup';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 //testando
 const Login: React.FC = () => {
     const formRef = useRef(null);
@@ -48,12 +49,12 @@ const Login: React.FC = () => {
                             name="senha"
                         />
                         <Button type="submit">Entrar</Button>
-                        <a href="forgot">Esqueci minha senha</a>
+                        <Link to="/forgot">Esqueci minha senha</Link>
                     </Form>
-                    <a href="register">
+                    <Link to="/register">
                         <FiLogIn />
                         Criar Conta
-                    </a>
+                    </Link>
                 </Content>
                 <Background></Background>
             </Container>

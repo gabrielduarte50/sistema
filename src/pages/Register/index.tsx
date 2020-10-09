@@ -6,7 +6,7 @@ import { BiArrowBack, BiUser } from 'react-icons/bi';
 import { FiMail, FiLock } from 'react-icons/fi';
 import * as Yup from 'yup';
 import { Form } from '@unform/web';
-
+// teste
 const Register: React.FC = () => {
     const formRef = useRef(null);
     async function handleSubmit(data: string) {
